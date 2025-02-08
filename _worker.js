@@ -5,7 +5,7 @@ let cachedProxyList = [];
 let proxyIP = "";
 let apiCheck = 'https://ipcf.rmtq.fun/json/?ip=';
 
-const DEFAULT_PROXY_BANK_URL = "https://raw.githubusercontent.com/InconigtoVPN/Inconigto.VPN/refs/heads/main/iplist.txt";
+const DEFAULT_PROXY_BANK_URL = "https://raw.githubusercontent.com/InconigtoVPN/ProxyIP/refs/heads/main/proxyList.txt";
 const TELEGRAM_BOT_TOKEN = '7342234925:AAE4mYTLrv9wsinHiMTIlpJ3MJxVJ9GDTX0';
 const TELEGRAM_API_URL = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}`;
 const APICF = 'https://ipcf.rmtq.fun/json/';
@@ -476,7 +476,7 @@ async function handleListWildcard(chatId) {
 async function handleGetRandomIPCommand(chatId) {
   try {
     // Fetching the Proxy IP list from the GitHub raw URL
-    const response = await fetch('https://raw.githubusercontent.com/AFRcloud/vip/refs/heads/main/vip.txt');
+    const response = await fetch('https://raw.githubusercontent.com/InconigtoVPN/ProxyIP/refs/heads/main/proxyList.txt');
     const data = await response.text();
 
     // Split the data into an array of Proxy IPs
