@@ -2,21 +2,18 @@ import { connect } from "cloudflare:sockets";
 
 // URL daftar proxy IP
 const DEFAULT_PROXY_BANK_URL = "https://raw.githubusercontent.com/InconigtoVPN/ProxyIP/refs/heads/main/proxyList.txt";
-const DEFAULT_PROXY_BANK_URL2 = "https://raw.githubusercontent.com/InconigtoVPN/InconigtoVPN/refs/heads/main/iplist.txt";
-
-// Variabel global yang dapat diedit
-let cachedProxyList = [];
-let proxyIP = "";
-let apiCheck = "https://ipcf.rmtq.fun/json/?ip=";
-
 // Informasi tambahan
-let pathinfo = "rmtqwrt";
-let nameWEB = "RMTQ-WRT";
+let nameWEB = "INCONIGTO-MODE";
 let telegram = "Noir7R";
 
 // Konstanta WebSocket
 const WS_READY_STATE_OPEN = 1;
 const WS_READY_STATE_CLOSING = 2;
+// Variabel global yang dapat diedit
+let cachedProxyList = [];
+let proxyIP = "";
+let apiCheck = "https://ipcf.rmtq.fun/json/?ip=";
+let pathinfo = "Source/Noir7R/Free";
 
 // async function getProxyList(env, forceReload = false) {
 //  try {
