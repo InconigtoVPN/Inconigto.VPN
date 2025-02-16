@@ -1,7 +1,7 @@
 import { connect } from "cloudflare:sockets";
 
 // URL daftar proxy IP
-const DEFAULT_PROXY_BANK_URL = "https://raw.githubusercontent.com/InconigtoVPN/ProxyIP/refs/heads/main/proxyList.txt";
+const DEFAULT_PROXY_BANK_URL = "https://raw.githubusercontent.com/InconigtoVPN/Inconigto.VPN/refs/heads/main/iplist.txt";
 // Informasi tambahan
 let nameWEB = "INCONIGTO-MODE";
 let telegram = "Noir7R";
